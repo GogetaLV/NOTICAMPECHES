@@ -15,6 +15,7 @@
             android:layout_height="match_parent"
             android:text="Login"
             android:textSize="60sp"
+            android:fontFamily="@font/rugenexpanded"
             android:layout_marginTop="60dp"
             android:layout_marginLeft="25dp"/>
 
@@ -22,17 +23,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
+            android:fontFamily="@font/brogte"
             android:layout_marginTop="8dp"
             android:text="Ingresar Correo y Contraseña"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <EditText
-            android:layout_width="357dp"
+            android:layout_width="351dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="50dp"
             android:layout_marginRight="25dp"
+            android:background="@drawable/editext_custom"
             android:inputType="textEmailAddress"
+            android:padding="15dp"
             android:text="Correo Electronico"
             android:textSize="15sp" />
 
@@ -44,16 +48,20 @@
             android:layout_marginRight="25dp"
             android:inputType="textPassword"
             android:text="Contraseña"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:background="@drawable/editext_custom"
+            android:padding="15dp"/>
 
         <Button
             android:layout_width="362dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
-            android:background="@color/btn_color"
+            android:background="@drawable/rounded_botton"
+            android:backgroundTint="@color/btn_color"
             android:text="Iniciar Sesión" />
     </LinearLayout>
+    <br
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,16 +69,16 @@
         android:layout_gravity="bottom"
         android:gravity="center_horizontal">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="20dp"
-            android:text="¿No tienes una cuenta?"
-            android:textSize="20sp" />
-
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="20dp"
+        android:text="¿No tienes una cuenta?"
+        android:textSize="20sp" />
 
 </LinearLayout>
 
