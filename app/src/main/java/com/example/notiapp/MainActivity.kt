@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Button
 import com.example.notiapp.R
 
 class MainActivity : AppCompatActivity() {
@@ -15,10 +16,18 @@ class MainActivity : AppCompatActivity() {
         tvGoRegister.setOnClickListener{
             goToRegister()
         }
+        val btnGoMenu = findViewById<Button>(R.id.tv_go_to_menu)
+        btnGoMenu.setOnClickListener{
+
+        }
 
     }
     private fun goToRegister() {
         val i = Intent(this, RegisterActivity:: class.java)
+        startActivity(i)
+    }
+    private fun btnGoMenu (){
+        val i = Intent(this, MenuActivity::class.java)
         startActivity(i)
     }
 }

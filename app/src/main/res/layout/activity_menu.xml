@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="INICIO"
+        android:textSize="60sp"
+        android:fontFamily="@font/rugenexpanded"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="25dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/rounded_botton"
+        android:backgroundTint="@color/btn_color"
+        android:text="REGISTRAR PULICACION"
+        android:drawableLeft="@drawable/baseline_public"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/rounded_botton"
+        android:backgroundTint="@color/btn_color"
+        android:text="NOTICIAS GUARDADAS"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/baseline_calendar"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+
+        android:background="@drawable/rounded_botton"
+        android:backgroundTint="@color/btn_color"
+        android:text="SALIR"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_logout"/>
+  </LinearLayout>
+
+
+
+</LinearLayout>

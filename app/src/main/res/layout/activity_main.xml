@@ -53,6 +53,7 @@
             android:padding="15dp"/>
 
         <Button
+            android:id="@+id/tv_go_to_menu"
             android:layout_width="362dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
