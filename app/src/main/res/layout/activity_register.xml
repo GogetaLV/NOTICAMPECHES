@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,11 +13,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Login"
+            android:text="Registro"
             android:textSize="60sp"
             android:fontFamily="@font/rugenexpanded"
             android:layout_marginTop="60dp"
-            android:layout_marginLeft="25dp"/>
+            android:layout_marginLeft="20dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -25,20 +25,32 @@
             android:layout_marginLeft="25dp"
             android:fontFamily="@font/brogte"
             android:layout_marginTop="8dp"
-            android:text="Ingresar Correo y Contraseña"
+            android:text="Complete este formulario"
             android:textSize="18sp" />
+        <EditText
+            android:layout_width="351dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/editext_custom"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:text="Nobre y Apellido"
+            android:textSize="15sp" />
 
         <EditText
             android:layout_width="351dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="25dp"
             android:background="@drawable/editext_custom"
             android:inputType="textEmailAddress"
             android:padding="15dp"
             android:text="Correo Electronico"
             android:textSize="15sp" />
+
 
         <EditText
             android:layout_width="351dp"
@@ -51,34 +63,38 @@
             android:textSize="15sp"
             android:background="@drawable/editext_custom"
             android:padding="15dp"/>
+        <EditText
+            android:layout_width="351dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:inputType="textPassword"
+            android:text="Repetir Contraseña"
+            android:textSize="15sp"
+            android:background="@drawable/editext_custom"
+            android:padding="15dp"/>
+
 
         <Button
             android:layout_width="362dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/rounded_botton"
             android:backgroundTint="@color/btn_color"
-            android:text="Iniciar Sesión" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="bottom"
-        android:gravity="center_horizontal">
-
-
+            android:text="Registrar" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tv_go_to_register"
+        android:id="@+id/tv_go_to_login"
         android:layout_width="match_parent"
         android:layout_height="66dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="20dp"
-        android:text="¿No tienes una cuenta?"
-        android:textSize="20sp" />
+        android:text="¿Volver a lOGIN?"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="605dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-</LinearLayout>
 
