@@ -1,9 +1,10 @@
-package com.example.notiapp
+package com.example.notiapp.uo
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.notiapp.R
 import com.example.notiapp.util.PreferenceHelper
 import com.example.notiapp.util.PreferenceHelper.set
 

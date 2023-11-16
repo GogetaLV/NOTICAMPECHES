@@ -1,4 +1,4 @@
-package com.example.notiapp
+package com.example.notiapp.uo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
