@@ -8,6 +8,10 @@ companion object{
     private const val BASE_URL =""
     fun create():ApiService{
         val retrofit = Retrofit.Buildeer()
+            .base(BSE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+        return retrofit.create(ApiService::class.java)
     }
 
 }
